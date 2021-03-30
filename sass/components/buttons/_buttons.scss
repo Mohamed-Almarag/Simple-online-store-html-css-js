@@ -1,0 +1,93 @@
+// // for Every  Button in section 
+
+// // this style for button in [--- landing-page section ---]
+// .sign {
+//   overflow: hidden;
+//   @include prefixer(transition, all .5s ease-in-out, webkit moz o);
+//   @extend %button;
+//   width: $bt-width + 80px;
+//   margin: $bt-margin + 5px;
+//   border-radius: $bt-border-radius;
+//   padding: 10px 50px;
+//   letter-spacing: 2px;
+//   &:hover {
+//     @include prefixer(box-shadow,0px 0px 7px 3px rgba($black, 0.2),webkit moz o);
+//     @include prefixer(transform,scale(.98),webkit moz o);
+//   }
+// }
+
+// // this style for button in [--- pricing section ---]
+// .select {
+//   @extend %button;
+//   @include prefixer(transition, 0.5s, webkit moz o);
+//   width: $bt-width;
+//   padding: 8px;
+//   margin: 0 auto $bt-margin;
+//   &:hover {
+//     @include prefixer(box-shadow,0px 0px 7px 2px rgba($black, 0.3),webkit moz o);
+//     @include prefixer(transform, scale(.9), webkit moz o);
+//   }
+// }
+
+
+// // this style for button in [--- newsletter section ---] 
+// .news-button {
+//   @extend %button;
+//   @include prefixer(transition, 0.5s, webkit moz o);
+//   margin-left: -5px;
+//   width: $bt-width;
+//   padding: 10px;
+//   border: 1px solid $maincolor !important;
+//   &:hover {
+//     background-color: transparent;
+//   }
+//   @media #{$smallmobile} {
+//     width: 60%;
+//   }
+// }
+
+// // For The Rooms Page
+// .discount-button {
+//   @extend %button;
+//   @include prefixer(transition, 0.5s, webkit moz o);
+//   width: $bt-width;
+//   margin-top: $bt-margin;
+//   color: $white;
+//   padding: 10px;
+//   border: 1px solid $maincolor !important;
+//   &:hover {
+//     background-color: transparent;
+//   }
+// }
+
+// // this style for button in [--- contact us section ---] 
+// // For The Services Page [-- Suggestion Button --]
+// .suggestion-button,
+// .send  {
+//   @extend %button;
+//   @include prefixer(transition, 0.5s, webkit moz o);
+//   letter-spacing: 2px;
+//   width: 50%;
+//   margin: auto;
+//   margin-top: $bt-margin * 2;
+//   color: $white;
+//   padding: 10px;
+//   border-radius: 20px;
+//   &:hover {
+//     @include prefixer(box-shadow,0 0 10px 3px rgba($black, 0.3),webkit moz o);
+//     @include prefixer(transform, scale(.95), webkit moz o);
+//   }
+//   @media #{$tabletsIpad} {
+//     width: 100%;
+//   }
+// }
+
+// .main-sign {
+//   .sign-in-button,
+//   .sign-up-button {
+//     margin-top: 15px;
+//     @media #{$tabletsIpad} {
+//       width: 70%;
+//     }
+//   }
+// }

@@ -1,0 +1,252 @@
+
+
+
+// start navigation bar 
+.main-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 30;
+  background-color: $white;
+  @media #{$xsmobile} {
+    top: auto;
+    bottom: 0;
+    @include prefixer(box-shadow, 0 0 10px rgba($black,.7) , webkit moz o);
+  }
+  // start phone number and language
+  .lang-phone {
+    background-color: #2a2a3b;
+    color: $white;
+    padding: 15px 0;
+    @media #{$xsmobile} {
+      display: none;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      .select {
+        @extend %selectbox;
+        .form-select {
+          color: $mainbg;
+        }
+      }
+    }
+  }
+  // start phone number and language
+}
+// end navigation bar 
+
+// start start logo and language at just mobile phone 
+.just-mobile {
+  background: #fff;
+  display: none;
+  @media #{$xsmobile} {
+    display: block;
+  }
+  .content-mobile {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .logo {
+      display: block;
+      img {
+        height: 50px;
+      }
+    }
+    .select {
+      margin: 0 10px;
+      @extend %selectbox;
+    }
+    .name {
+      font-size: 14px;
+    }
+  }
+}
+
+// start start logo and language at just mobile phone 
+
+
+// start first slider as the intro of page 
+.first-slider {
+  margin-top: 160px;
+  overflow: hidden;
+  @media #{$xsmobile} {
+    margin-top: 10px;
+  }
+  .center {
+    .img-container {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .first-slider .center .img-container img {
+      border-radius: 10px !important;
+    }
+    .slick-slide {
+      .img-container {
+        height: 250px !important;
+        padding:10px;
+        img {
+          border-radius: 10px !important;
+        }
+      }
+    }
+  }
+}
+// end first slider as the intro of page 
+
+
+
+// start slider two prosucts-kinds
+.prosucts-kinds {
+  padding-top: 30px;
+  .center-products {
+    .product-box {
+      img {
+        @include prefixer(box-shadow, 0 3px 6px rgba($black,.2) , webkit moz o);
+        border-radius: 50%;
+        margin:auto;
+        border: 1px solid $maincolor;
+        @media #{$tablets} {
+          width: 50px;
+        }
+        @media #{$xsmobile} {
+          width: 35px;
+        }
+      }
+      h4 {
+        font-size: 14px;
+        margin-top: 10px;
+        @media #{$tablets} {
+          font-size: 12px;
+        }
+        @media #{$xsmobile} {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+
+// end slider two prosucts-kinds
+
+
+
+// start childrens clothes
+.children-clothes {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .children-box {
+    @include prefixer(filter, drop-shadow(0px 0px 2px rgba($black,.3)) , webkit moz o);
+    position: relative;
+    margin-bottom: 20px;
+    height: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+    &::before {
+      @include beforeandaftermix;
+      background-color: rgba($black,.4);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .disc {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      color: $mainbg;
+      height: 100%;
+      &.xs-mobile {
+        @media #{$xsmobile} {
+          right: 30px;
+          left: auto;
+          color: $bgcolor;
+        }
+      }
+      h5 {
+        font-weight: bold;
+      }
+      .one,.two {
+        font: {
+          size: 14px;
+          style: italic;
+          weight: bold;
+        }
+      }
+      .one {
+        margin-top: 100px;
+        margin-bottom: 7px;
+        @media #{$xsmobile} {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+// end childrens clothes
+
+
+
+// start products model
+.products-model {
+  @media #{$xsmobile} {
+    padding-bottom: 80px;
+  }
+  .model-container {
+    .type-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      @media #{$xsmobile} {
+        width: 50%;
+      }
+      .img {
+        // border-radius: 50%;
+        background: #D8DADE;
+        // height: 110px;
+        // width: 110px;
+        display: flex;
+        margin-right: 10px;
+        @include prefixer(transition, .4s ease-in-out , webkit moz o);
+        @media #{$xsmobile} {
+          width: 30%;
+          margin-right: auto;
+        }
+        &:hover {
+          @include prefixer(filter, drop-shadow(0px 0px 4px rgba($black,.3)) , webkit moz o);
+          background-color: #F6F4F2;
+        }
+        img {
+          width: 100%;
+          display: block;
+          height: 100%;
+          border-radius: 50%;
+          margin: auto;
+        }
+      }
+      span {
+        color: $textcolor;
+        @media #{$xsmobile} {
+          width: 68%;
+          font-size: 12px;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+}
+// end products model
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+
+
+.header {
+  @media #{$xsmobile} {
+    padding-bottom: 10px;
+    padding-top: 10px
+  }
+  .content-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$xsmobile} {
+      justify-content: center;
+    }
+    .first {
+      display: flex;
+      align-items: center;
+      @media #{$xsmobile} {
+        display: none;
+      }
+      .logo {
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        img {
+          display: inherit;
+          height: 40px;
+        }
+      }
+      .name {
+        font-size: 14px;
+        color: $textcolor !important;
+      }
+    }
+    .second {
+      @media #{$xsmobile} {
+        width: 100%;
+        display: flex;
+      }
+      ul {
+        display: flex;
+        margin-top: revert;
+        margin-bottom: auto;
+        @media #{$xsmobile} {
+          width: 100%;
+          margin-top: auto;
+        }
+        li:not(:last-child) {
+          @media #{$large} {
+            margin-right: 20px;
+          }
+        }
+        li {
+          cursor: pointer;
+          position: relative;
+          @media #{$xsmobile} {
+            width: 20%;
+          }
+          &.active,
+          &:hover {
+            i,a {
+              @include prefixer(transition, .4s ease-in-out , webkit moz o);
+              color: $maincolor !important;
+            }
+          }
+          &.cart {
+            i {
+              @media #{$xsmobile} {
+                position: absolute;
+                top: -35px;
+                left: 50%;
+                background: $maincolor;
+                @include prefixer(transform, translate(-50%) , webkit moz o);
+                @include prefixer(box-shadow, 0 2px 4px rgba($black,.3) , webkit moz o);
+                padding: 20px 10px;
+                border-radius: 50%;
+                color: $white !important;
+                width: 50px;
+                height: 50px;
+                font-size: 16px;
+              }
+            }
+            a {
+              @media #{$xsmobile} {
+                bottom: 0;
+                position: absolute;
+                left: 50%;
+                @include prefixer(transform, translate(-50%) , webkit moz o);
+              }
+            }
+            span {
+              position: absolute;
+              top: -4px;
+              background: $maincolor;
+              right: -7px;
+              font-size: 10px;
+              padding: 4px;
+              border-radius: 50%;
+              color: #fff;
+              line-height: 1;
+              @media #{$xsmobile} {
+                left: 50%;
+                right: auto;
+                top: -27px;
+                @include prefixer(transform, translate(-50%) , webkit moz o);
+                z-index: 2;
+              }
+            }
+          }
+          
+        }
+        i {
+          font-size: 20px;
+          color: $textcolor !important;
+        }
+        a {
+          font-size: 14px;
+          color: $textcolor !important;
+          @media #{$xsmobile} {
+            padding: unset !important;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+

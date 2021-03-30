@@ -1,0 +1,21 @@
+// globale style
+@import "../globalstyle/globale";
+
+// from Helpers [to help me in prefixers for browsers, colors , fonts .... ETC]
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
+
+// from layout [---- Header  ------]
+@import "../layout/header";
+
+
+//  [---- Buttons ------]
+@import "../components/buttons/buttons";
+
+
+
+
+// from pages [---- Home page ------]
+@import "../pages/home";
+

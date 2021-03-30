@@ -1,0 +1,35 @@
+// some mixins  to help me in dseign
+
+
+
+// [-- 1 -- ] prefixes to all browsers
+@mixin prefixer($property, $value, $prefixes:()) {
+  @each $prefix in $prefixes {
+    #{"-" + $prefix + "-" + $property} :  $value;
+  }
+  #{$property} : $value;
+}
+
+// [-- 2 -- ] beforeandaftermix Effect
+@mixin beforeandaftermix {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+// [-- 4 -- ] Animation Mixin
+@mixin animationmix($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}

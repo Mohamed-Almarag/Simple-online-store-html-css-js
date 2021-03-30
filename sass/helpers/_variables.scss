@@ -1,0 +1,45 @@
+
+@import "../helpers/mixins";
+
+// these variables for media query
+$tabletsIpad: "(min-width: 320px) and (max-width: 767px)";
+$navbartoggleritem: ("min-width: 992px");
+$tablets: "(min-width: 320px) and (max-width: 768px)";
+$extramallmobile: "(min-width: 320px) and (max-width: 480px)";
+$bigmobile:"(min-width: 480px) and (max-width: 576px)";
+
+
+$large: (min-width: 992px);
+$medium: "(min-width: 767px) and (max-width: 991px)";
+$tablets: "(min-width: 576px) and (max-width: 767px)";
+$xsmobile: "(min-width: 320px) and (max-width: 576px)";
+
+
+
+
+// -------------- Start Colors  #24caac
+$maincolor: #FDAF29;
+$bgcolor: #2A2A3B;
+$bgcolor2: #E6E6E6;
+
+$mainbg: #F8F8F8;
+$white: #fff;
+$black: #000;
+$textcolor: #52525f;
+// $thirdcolor: #211f24;
+
+// // the text color
+
+
+%selectbox {
+  .form-select{
+    background: transparent !important;
+    border: none !important;
+    color: $textcolor;
+    outline: none;
+    option {
+      color: $maincolor
+    }
+  }
+}
+

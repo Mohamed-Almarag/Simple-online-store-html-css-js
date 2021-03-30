@@ -1,0 +1,93 @@
+
+.ask-addcart {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  .one {
+    background-color: $bgcolor2;
+    width: 40%;
+    height: 100%;
+    i {
+      display: block;
+      color: $white;
+      margin: 5px auto;
+      background: #4caf50;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      line-height: 22px;
+    }
+    span {
+      color: $textcolor;
+    }
+  }
+  .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    background-color: $bgcolor;
+    span {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+// start logo and person profile
+.person-profile {
+  background-color: $white;
+  padding: 10px 0;
+  .content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .main-information {
+      display: flex;
+      align-items: center;
+      .link {
+        img {
+          height: 50px;
+        }
+      }
+      .select-box {
+        @extend %selectbox;
+        margin: 0 10px;
+      }
+      .person-name {
+        color: $textcolor;
+      }
+    }
+    .cart-shop {
+      @include prefixer(box-shadow, 0 3px 6px rgba($black,.3) , webkit moz o);
+      position: relative;
+      background: $maincolor;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: $white;
+      i {
+        @include prefixer(transform, translatex(-50%) , webkit moz o);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      span {
+        @include prefixer(transform, translatex(-50%) , webkit moz o);
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        top: 17%;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+// end logo and person profile
