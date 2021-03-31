@@ -205,10 +205,7 @@
         width: 50%;
       }
       .img {
-        // border-radius: 50%;
-        background: #D8DADE;
-        // height: 110px;
-        // width: 110px;
+        overflow: hidden;
         display: flex;
         margin-right: 10px;
         @include prefixer(transition, .4s ease-in-out , webkit moz o);
