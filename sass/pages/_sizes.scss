@@ -6,6 +6,9 @@
 // start logo and person profile
 .person-profile {
   padding: 10px 0;
+  @media #{$xsmobile} {
+    padding: 20px 0 0px;
+  }
   .content-box {
     display: flex;
     justify-content: space-between;
@@ -16,14 +19,24 @@
       .link {
         img {
           height: 50px;
+          @media #{$xsmobile} {
+            height: 30px;
+          }
         }
       }
       .select-box {
         @extend %selectbox;
         margin: 0 10px;
+        @media #{$xsmobile} {
+          margin: 0 5px;
+          font-size: 14px;
+        }
       }
       .person-name {
         color: $textcolor;
+        @media #{$xsmobile} {
+          font-size: 14px;
+        }
       }
     }
     .cart-shop {
@@ -34,11 +47,18 @@
       height: 50px;
       border-radius: 50%;
       color: $white;
+      @media #{$xsmobile} {
+        width: 30px;
+        height: 30px;
+      }
       i {
         @include prefixer(transform, translatex(-50%) , webkit moz o);
         position: absolute;
         top: 50%;
         left: 50%;
+        @media #{$xsmobile} {
+          font-size: 12px;
+        }
       }
       span {
         @include prefixer(transform, translatex(-50%) , webkit moz o);
@@ -47,6 +67,9 @@
         left: 50%;
         top: 17%;
         font-size: 12px;
+        @media #{$xsmobile} {
+          top: 0%;
+        }
       }
     }
   }
@@ -58,26 +81,45 @@
 .product-slider {
   padding-top: 30px;
   padding-bottom: 30px;
+  overflow: hidden;
   .slider-photos {
     background-color: $white;
+    height: 260px !important;
+    width: 100% !important;
+    // height: 100% !important;
+    @media #{$xsmobile} {
+      height: 240px !important;
+      width: 70% !important;
+    }
+    .slick-list {
+      height: 260px !important;
+      @media #{$xsmobile} {
+        height: 240px !important;
+      }
+      .slick-track{
+        height: 260px !important;
+        @media #{$xsmobile} {
+          height: 240px !important;
+        }
+      }
+    }
+    .slick-slide {
+      height: 260px !important;
+      @media #{$xsmobile} {
+        height: 240px !important;
+      }
       .img-container {
+        height: 260px !important;
+        @media #{$xsmobile} {
+          height: 240px !important;
+        }
+        padding:10px;
         img {
           width: 100%;
           height: 100%;
         }
       }
-      // .first-slider .center .img-container img {
-      //   border-radius: 10px !important;
-      // }
-      .slick-slide {
-        .img-container {
-          // height: 250px !important;
-          padding:10px;
-          // img {
-          //   // border-radius: 10px !important;
-          // }
-        }
-      }
+    }    
     .slick-dots {
       li{
         button {
@@ -89,48 +131,119 @@
       li:nth-child(1) {
         button {
           background: $slidercolor1 !important;
-
         }
       }
       li:nth-child(2) {
         button {
           background-color: $slidercolor2 !important;
-
         }
       }
       li:nth-child(3) {
         button {
           background-color: $slidercolor3 !important;
-
         }
       }
       li:nth-child(4) {
         button {
           background-color: $slidercolor4 !important;
-
         }
       }
       li:nth-child(5) {
         button {
           background-color: $slidercolor5 !important;
-
         }
       }
     }
   }
   .discription-box {
-
+    height: 260px;
+    font-size: 13px;
+    @media #{$xsmobile} {
+      height: 240px;
+      width: 30% !important;
+      padding: 0 8px !important;
+    }
+    .price {
+      color: $textcolor;
+      width: 135px;
+      padding: 5px;
+      margin: auto;
+      @media #{$xsmobile} {
+        width: auto;
+        padding: 5px;
+        margin: 0px auto;
+        font-size: 12px;
+      }
+      &.old-price {
+        position: relative;
+        opacity: .7;
+        &::before {
+          position: absolute;
+          content: '';
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $textcolor;
+        }
+      }
+      &.new-price {
+        background-color: $white;
+      }
+    }
+    .disc {
+      color: $textcolor;
+      padding: 8px;
+      @media #{$xsmobile} {
+        padding: 5px;
+        font-size: 11px;
+        text-align: left !important;
+      }
+    }
+    hr {
+      margin: auto;
+    }
+    .one {
+      padding-top: 6px;
+      margin-left: 10px;
+      width: 135px;
+      margin: auto;
+      text-align: left;
+      @media #{$xsmobile} {
+        padding-top: 7px;
+        margin-left: auto;
+        width: auto;
+        margin: auto;
+        font-size: 10px;
+      }
+      h6 {
+        color: $an-color;
+        margin-bottom: 3px;
+        font-size: 13px;
+        @media #{$xsmobile} {
+          margin-bottom: auto;
+          font-size: 11px;
+        }
+      }
+      span {
+        color: $textcolor;
+        font-size: 10px;
+        // @media #{$xsmobile} {
+        //   font-size: 10px;
+        // }
+      }
+    }
   }
 }
-
-
-
 // end products slider photos
 
-
+// start jeans sizes and ages section 
 .jeans-sizes {
   padding-top: 30px;
   padding-bottom: 30px;
+  @media #{$xsmobile} {
+    padding-top: 0;
+  }
   .jeans-lycra {
     background: #fff;
     .disc-box {
@@ -141,24 +254,39 @@
     }
     h5 {
       margin-bottom: 0;
+      @media #{$xsmobile} {
+        font-size: 13px;
+      }
     }
     p {
       margin-bottom: 0;
+      @media #{$xsmobile} {
+        font-size: 10px;
+      }
     }
   }
   .content-box {
     padding-top: 20px;
     h2 {
       color: $an-color;
+      @media #{$xsmobile} {
+        font-size: 18px;
+      }
     }
     p {
       color: $textcolor;
       line-height: 1.7;
+      @media #{$xsmobile} {
+        font-size: 12px;
+      }
     }
   }
   .age-box {
     h3 {
       color: $textcolor;
+      @media #{$xsmobile} {
+        font-size: 16px;
+      }
     }
     .ages-list {
       display: flex;
@@ -167,6 +295,13 @@
         margin-left: 20px;
         text-align: center;
         display: inline-block;
+        @media #{$tablets} {
+          margin-left: 0;
+        }
+        @media #{$xsmobile} {
+          width: 40px;
+          margin-left: 0;
+        }
         .number {
           @include prefixer(box-shadow, 0 3px 6px rgba($black, .2) , webkit moz o);
           @include prefixer(transition, .5s , webkit moz o);
@@ -184,19 +319,34 @@
             background-color: $maincolor;
             color: $white;
           }
+          @media #{$xsmobile} {
+            font-size: 12px;
+            width: 25px;
+            height: 25px;
+            line-height: 16px;
+          }
         }
         .year {
-          color: $textcolor
+          color: $textcolor;
+          @media #{$xsmobile} {
+            font-size: 11px;
+          }
         }
       }
     }
     .box-model {
       display: flex;
+      @media #{$xsmobile} {
+        justify-content: space-between;
+      }
       .shirt {
         @include prefixer(box-shadow, 0 3px 6px rgba($black, .2) , webkit moz o);
         text-align: center;
         background: #fff;
         margin-left: 50px;
+        @media #{$xsmobile} {
+          margin-left: 15px;
+        }
         img {
           padding: 10px;
         }
@@ -205,24 +355,43 @@
           background: #f8f8f8;
           width: 100%;
           padding: 10px 5px;
-          color: $textcolor
+          color: $textcolor;
+          @media #{$xsmobile} {
+            font-size: 10px;
+          }
         }
       }
     }
   }
   .long {
     display: flex;
+    @media #{$xsmobile} {
+      // width: 70%;
+      position: relative;
+      top: -50px;
+    }
     .one {
       display: flex;
       align-items: center;
       margin-left: 30px;
       font-size: 14px;
+      @media #{$xsmobile} {
+        font-size: 10px;
+        margin-left: 0;
+      }
       .divnum-2 {
         margin: 0 20px;
+        @media #{$xsmobile} {
+          margin: 0 5px;
+        }
       }
       .divnum-3 {
         padding-right: 20px;
-        border-right: 1px solid #ccc;
+        border-right: 1px solid $bgcolor2;
+        @media #{$xsmobile} {
+          padding-right: 10px;
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -233,9 +402,16 @@
     border: 1px solid $maincolor;
     padding: 30px 25px;
     margin-top: 40px;
+    @media #{$xsmobile} {
+      margin-top: 20px;
+      padding: 30px 10px;
+    }
     h5 {
       margin-bottom: 20px;
       color: $textcolor;
+      @media #{$xsmobile} {
+        font-size: 16px;
+      }
     }
     ul {
       display: flex;
@@ -260,22 +436,78 @@
         &:nth-child(5) {
           background-color: $slidercolor5;
         }
+        @media #{$xsmobile} {
+          margin-right: 15px;
+        }
       }
     }
   }
   // selct colors
 }
+// end jeans sizes and ages section
 
 
+// start related products 
+.related-products {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  @media #{$xsmobile} {
+    padding-top: 10px;
+  }
+  &::before {
+    @include prefixer(transform, translateX(-50%) , webkit moz o);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    height: 1px;
+    width: 50%;
+    background-color: $bgcolor2;
+  }
+  .heading-product {
+    color: $textcolor;
+    margin-bottom: 30px;
+    @media #{$xsmobile} {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+  .slick-list {
+    padding: unset !important;
+  }
+  .slick-slide {
+    padding: 10px;
+    .img-container {
+      display: inline-block;
+      background: $white;
+      padding: 5px;
 
+      border-radius: 10px;
+      img {
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+// end related products 
 
 // start ask adn add to cart
 .ask-addcart {
-  // position: fixed;
-  // bottom: 0;
+  position: fixed;
+  bottom: 0;
   height: 60px;
   width: 100%;
   display: flex;
+  z-index: 40;
+  @media #{$xsmobile} {
+    font-size: 12px;
+  }
+  .share {
+    border: none;
+    outline: none;
+  }
   .one {
     background-color: $bgcolor2;
     width: 40%;
