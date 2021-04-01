@@ -490,6 +490,25 @@
       }
     }
   }
+  .details {
+    padding: 5px;
+    .details-box {
+      padding: 5px 0;
+      color: $textcolor;
+      display: flex;
+      justify-content: space-between;
+      span {
+        color: $textcolor;
+        font-size: 12px;
+        &.old {
+          text-decoration: line-through;
+        }
+        &.new {
+          color: $maincolor;
+        }
+      }
+    }
+  }
 }
 // end related products 
 

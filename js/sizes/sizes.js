@@ -7,16 +7,6 @@ $('.center').slick({
   arrows: false,
 
   responsive: [
-    // {
-    //   breakpoint: 768,
-    //   settings: {
-    //     arrows: false,
-    //     centerMode: true,
-    //     centerPadding: '40px',
-    //     slidesToShow: 3,
-    //     dots: false,
-    //   }
-    // },
     {
       breakpoint: 768,
       settings: {
@@ -38,26 +28,4 @@ $('.related-products-slider').slick({
   slidesToScroll: 2,
   dots: false,
   arrows: false,
-    // responsive: [
-  //   {
-  //     breakpoint: 768,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 3,
-  //       dots: false,
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       arrows: false,
-  //       centerMode: true,
-  //       centerPadding: '40px',
-  //       slidesToShow: 1,
-  //       dots: false,
-  //     }
-  //   }
-  // ]
 });

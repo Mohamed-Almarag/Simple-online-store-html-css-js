@@ -3,6 +3,7 @@
   border: none !important;
   color: #52525f;
   outline: none;
+  cursor: pointer;
 }
 
 .person-profile .content-box .main-information .select-box .form-select option {
@@ -19,6 +20,7 @@ body {
   border: none !important;
   color: #52525f;
   outline: none;
+  cursor: pointer;
 }
 
 .person-profile .content-box .main-information .select-box .form-select option {
@@ -877,6 +879,34 @@ body {
 .related-products .slick-slide .img-container img {
   margin: auto;
   width: 100%;
+}
+
+.related-products .details {
+  padding: 5px;
+}
+
+.related-products .details .details-box {
+  padding: 5px 0;
+  color: #52525f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.related-products .details .details-box span {
+  color: #52525f;
+  font-size: 12px;
+}
+
+.related-products .details .details-box span.old {
+  text-decoration: line-through;
+}
+
+.related-products .details .details-box span.new {
+  color: #FDAF29;
 }
 
 .ask-addcart {
