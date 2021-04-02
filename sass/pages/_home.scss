@@ -104,11 +104,31 @@
   padding-top: 30px;
   .center-products {
     .product-box {
+      position: relative;
+      &:hover{
+        &::before{
+          background-color: $maincolor;
+        }
+        img {
+          border: 1px solid $maincolor;
+        }
+        
+      }
+      &::before {
+        @include prefixer(transition, .3s ease-in-out, webkit moz o);
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 70%;
+        bottom: 0;
+        left: 15%;
+      }
       img {
         @include prefixer(box-shadow, 0 3px 6px rgba($black,.2) , webkit moz o);
+        @include prefixer(transition, .3s ease-in-out, webkit moz o);
         border-radius: 50%;
         margin:auto;
-        border: 1px solid $maincolor;
+        border: 1px solid transparent;
         @media #{$tablets} {
           width: 50px;
         }
@@ -117,6 +137,7 @@
         }
       }
       h4 {
+        color: $textcolor;
         font-size: 14px;
         margin-top: 10px;
         line-height: 1.5;
