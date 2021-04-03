@@ -8,6 +8,7 @@
 
 .person-profile .content-box .main-information .select-box .form-select option {
   color: #FDAF29;
+  cursor: pointer;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 
 .person-profile .content-box .main-information .select-box .form-select option {
   color: #FDAF29;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -70,10 +72,15 @@ body {
 }
 
 .header .content-nav .first .logo {
-  border: 1px solid #ccc;
   margin-right: 10px;
   display: inline-block;
   cursor: pointer;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header .content-nav .first .logo {
+    margin-right: 5px;
+  }
 }
 
 .header .content-nav .first .logo img {
@@ -84,6 +91,12 @@ body {
 .header .content-nav .first .name {
   font-size: 14px;
   color: #52525f !important;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header .content-nav .first .name {
+    font-size: 11px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -261,7 +274,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 576px) {
   .person-profile .content-box .main-information .person-name {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -275,6 +288,7 @@ body {
   height: 50px;
   border-radius: 50%;
   color: #fff;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -454,6 +468,7 @@ body {
 .product-slider .discription-box .disc {
   color: #52525f;
   padding: 8px;
+  text-align: left;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -611,6 +626,15 @@ body {
     width: 40px;
     margin-left: 0;
   }
+}
+
+.jeans-sizes .age-box .ages-list li.active .number {
+  background-color: #FDAF29;
+  color: #fff;
+}
+
+.jeans-sizes .age-box .ages-list li.active .year {
+  color: #FDAF29;
 }
 
 .jeans-sizes .age-box .ages-list li .number {
@@ -825,6 +849,12 @@ body {
   }
 }
 
+.jeans-sizes .color-data,
+.jeans-sizes .age-data,
+.jeans-sizes .size-data {
+  display: none;
+}
+
 .related-products {
   position: relative;
   padding-top: 30px;
@@ -898,7 +928,7 @@ body {
 
 .related-products .details .details-box span {
   color: #52525f;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .related-products .details .details-box span.old {
@@ -927,8 +957,23 @@ body {
 }
 
 .ask-addcart .share {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   border: none;
   outline: none;
+}
+
+.ask-addcart .share:hover {
+  background-color: #FDAF29;
+}
+
+.ask-addcart .share:hover span {
+  color: #fff;
+}
+
+.ask-addcart .share:hover i {
+  background-color: #fff;
+  color: #FDAF29;
 }
 
 .ask-addcart .one {
@@ -938,10 +983,12 @@ body {
 }
 
 .ask-addcart .one i {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   display: block;
   color: #fff;
   margin: 5px auto;
-  background: #4caf50;
+  background-color: #4caf50;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -949,6 +996,8 @@ body {
 }
 
 .ask-addcart .one span {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   color: #52525f;
 }
 

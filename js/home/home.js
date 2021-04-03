@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 $('.center').slick({
   centerMode: true,
   centerPadding: '60px',

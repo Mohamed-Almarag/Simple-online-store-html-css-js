@@ -5,7 +5,6 @@ $('.center').slick({
   slidesToShow: 2,
   dots: true,
   arrows: false,
-
   responsive: [
     {
       breakpoint: 768,
@@ -28,4 +27,39 @@ $('.related-products-slider').slick({
   slidesToScroll: 2,
   dots: false,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        centerMode: true,
+        // centerPadding: '60px',
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        dots: false,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        centerMode: true,
+        // centerPadding: '60px',
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: false,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        centerMode: true,
+        // centerPadding: '60px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+      }
+    }
+  ]
 });

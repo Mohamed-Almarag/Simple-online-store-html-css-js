@@ -26,6 +26,7 @@ $white: #fff;
 $black: #000;
 $textcolor: #52525f;
 $an-color: #3B4FBD;
+$bgcontact:#4caf50;
 $slidercolor1: #6E43FF;
 $slidercolor2: #BD3B3B;
 $slidercolor3: #F8C900;
@@ -44,7 +45,8 @@ $slidercolor5: #3D3952;
     outline: none;
     cursor: pointer;
     option {
-      color: $maincolor
+      color: $maincolor;
+      cursor: pointer;
     }
   }
 }

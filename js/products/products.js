@@ -1,5 +1,4 @@
 
-
 $('.center-products').slick({
   infinite: true,
   slidesToShow: 6,

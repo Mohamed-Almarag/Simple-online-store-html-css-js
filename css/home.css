@@ -8,6 +8,7 @@
 
 .main-header .lang-phone .content .select .form-select option, .just-mobile .content-mobile .select .form-select option {
   color: #FDAF29;
+  cursor: pointer;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 
 .main-header .lang-phone .content .select .form-select option, .just-mobile .content-mobile .select .form-select option {
   color: #FDAF29;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -70,10 +72,15 @@ body {
 }
 
 .header .content-nav .first .logo {
-  border: 1px solid #ccc;
   margin-right: 10px;
   display: inline-block;
   cursor: pointer;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header .content-nav .first .logo {
+    margin-right: 5px;
+  }
 }
 
 .header .content-nav .first .logo img {
@@ -84,6 +91,12 @@ body {
 .header .content-nav .first .name {
   font-size: 14px;
   color: #52525f !important;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header .content-nav .first .name {
+    font-size: 11px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -363,7 +376,7 @@ body {
   }
 }
 
-.prosucts-kinds .center-products .product-box h4 {
+.prosucts-kinds .center-products .product-box .product-title {
   color: #52525f;
   font-size: 14px;
   margin-top: 10px;
@@ -371,13 +384,13 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .prosucts-kinds .center-products .product-box h4 {
+  .prosucts-kinds .center-products .product-box .product-title {
     font-size: 12px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
-  .prosucts-kinds .center-products .product-box h4 {
+  .prosucts-kinds .center-products .product-box .product-title {
     font-size: 9px;
   }
 }

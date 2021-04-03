@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="libs/slick/css/slick-theme.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/products.css"/>
+  <!-- <link rel="stylesheet" href="css/products-rtl.css"/> -->
 </head>
 <body>
   
@@ -23,16 +24,16 @@
           </a>
           <div class="select-box">
             <select class="form-select" aria-label="Default select example">
-              <option value="1">EN</option>
-              <option value="2">AR</option>
+              <option value="EN">EN</option>
+              <option value="AR">AR</option>
             </select>
           </div>
           <span class="person-name text-capitalize">mohamed almarag</span>
         </div>
         <div class="select-box-2">
           <select class="form-select" aria-label="Default select example">
-            <option value="1">Baby</option>
-            <option value="2">Boy</option>
+            <option value="Baby">Baby</option>
+            <option value="Boy">Boy</option>
           </select>
         </div>
       </div>
@@ -121,7 +122,47 @@
   <!-- end slider prosucts-kinds  -->
 
   <!-- start gender and age -->
-  <section class="gender-age-cards">
+  <section class="gender-age">
+    <div class="container">
+      <div class="lists">
+        <div class="dropdown">
+          <button class="btn text-capitalize dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            age
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <span class="dropdown-item">2</span>
+            <span class="dropdown-item">5</span>
+            <span class="dropdown-item">12</span>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn text-capitalize dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            gender
+          </button>
+          <div class="dropdown-menu text-capitalize" aria-labelledby="dropdownMenuButton">
+            <span class="dropdown-item">male</span>
+            <span class="dropdown-item">female</span>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn text-capitalize dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            color
+          </button>
+          <div class="dropdown-menu text-capitalize" aria-labelledby="dropdownMenuButton">
+            <span class="dropdown-item">red</span>
+            <span class="dropdown-item">green</span>
+            <span class="dropdown-item">blue</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- end gender and age -->
+
+  <!-- start gender and age -->
+  <section class="production-cards">
     <div class="container">
       <div class="cards">
         <div class="row">
@@ -197,10 +238,6 @@
               <button type="button" class="add-button text-uppercase">add</button>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
     </div>

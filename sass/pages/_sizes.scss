@@ -1,8 +1,4 @@
 
-
-
-
-
 // start logo and person profile
 .person-profile {
   padding: 10px 0;
@@ -35,7 +31,7 @@
       .person-name {
         color: $textcolor;
         @media #{$xsmobile} {
-          font-size: 14px;
+          font-size: 12px;
         }
       }
     }
@@ -47,6 +43,7 @@
       height: 50px;
       border-radius: 50%;
       color: $white;
+      cursor: pointer;
       @media #{$xsmobile} {
         width: 30px;
         height: 30px;
@@ -76,7 +73,6 @@
 }
 // end logo and person profile
 
-
 // start products slider photos
 .product-slider {
   padding-top: 30px;
@@ -86,7 +82,6 @@
     background-color: $white;
     height: 260px !important;
     width: 100% !important;
-    // height: 100% !important;
     @media #{$xsmobile} {
       height: 240px !important;
       width: 70% !important;
@@ -194,6 +189,7 @@
     .disc {
       color: $textcolor;
       padding: 8px;
+      text-align: left;
       @media #{$xsmobile} {
         padding: 5px;
         font-size: 11px;
@@ -302,6 +298,15 @@
           width: 40px;
           margin-left: 0;
         }
+        &.active {
+          .number {
+            background-color: $maincolor;
+            color: $white;
+          }
+          .year {
+            color: $maincolor;
+          }
+        }
         .number {
           @include prefixer(box-shadow, 0 3px 6px rgba($black, .2) , webkit moz o);
           @include prefixer(transition, .5s , webkit moz o);
@@ -366,7 +371,6 @@
   .long {
     display: flex;
     @media #{$xsmobile} {
-      // width: 70%;
       position: relative;
       top: -50px;
     }
@@ -443,6 +447,11 @@
     }
   }
   // selct colors
+  .color-data,
+  .age-data,
+  .size-data {
+    display: none;
+  }
 }
 // end jeans sizes and ages section
 
@@ -499,7 +508,7 @@
       justify-content: space-between;
       span {
         color: $textcolor;
-        font-size: 12px;
+        font-size: 11px;
         &.old {
           text-decoration: line-through;
         }
@@ -524,24 +533,37 @@
     font-size: 12px;
   }
   .share {
+    @include prefixer(transition, .3s ease-in-out, webkit moz o);
     border: none;
     outline: none;
+    &:hover {
+      background-color: $maincolor;
+      span {
+        color: $white;
+      }
+      i {
+        background-color: $white;
+        color: $maincolor;
+      }
+    }
   }
   .one {
     background-color: $bgcolor2;
     width: 40%;
     height: 100%;
     i {
+      @include prefixer(transition, .3s ease-in-out, webkit moz o);
       display: block;
       color: $white;
       margin: 5px auto;
-      background: #4caf50;
+      background-color: $bgcontact;
       width: 22px;
       height: 22px;
       border-radius: 50%;
       line-height: 22px;
     }
     span {
+      @include prefixer(transition, .3s ease-in-out, webkit moz o);
       color: $textcolor;
     }
   }

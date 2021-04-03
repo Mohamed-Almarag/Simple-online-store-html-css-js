@@ -1,6 +1,4 @@
 
-
-
 // start navigation bar 
 .main-header {
   position: fixed;
@@ -36,7 +34,7 @@
 }
 // end navigation bar 
 
-// start start logo and language at just mobile phone 
+// start logo and language at just mobile phone 
 .just-mobile {
   background: #fff;
   display: none;
@@ -63,9 +61,7 @@
     }
   }
 }
-
-// start start logo and language at just mobile phone 
-
+// end logo and language at just mobile phone 
 
 // start first slider as the intro of page 
 .first-slider {
@@ -97,8 +93,6 @@
 }
 // end first slider as the intro of page 
 
-
-
 // start slider two prosucts-kinds
 .prosucts-kinds {
   padding-top: 30px;
@@ -112,7 +106,6 @@
         img {
           border: 1px solid $maincolor;
         }
-        
       }
       &::before {
         @include prefixer(transition, .3s ease-in-out, webkit moz o);
@@ -136,7 +129,7 @@
           width: 35px;
         }
       }
-      h4 {
+      .product-title {
         color: $textcolor;
         font-size: 14px;
         margin-top: 10px;
@@ -152,8 +145,6 @@
   }
 }
 // end slider two prosucts-kinds
-
-
 
 // start childrens clothes
 .children-clothes {
@@ -209,8 +200,6 @@
 }
 // end childrens clothes
 
-
-
 // start products model
 .products-model {
   @media #{$xsmobile} {
@@ -258,13 +247,3 @@
   }
 }
 // end products model
-
-
-
-
-
-
-
-
-
-
